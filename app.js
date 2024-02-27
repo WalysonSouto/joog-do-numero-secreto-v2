@@ -1,5 +1,5 @@
 let listaNumeroDeSorteado =  [];
-let numeroMaximoJogo = 30;
+let numeroMaximoJogo = 10;
 let numeroSecreto = criarNumeroAleatorio();
 let tentativas = 1;
 
@@ -22,7 +22,7 @@ function verificarChute(){
 
     if(chute == numeroSecreto){
         exibirTextoNaTela('h1','Parabens!');
-        let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentaiva';
+        let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
         let mensagemTentativa = `Você descobriu o numero secreto com ${tentativas} ${palavraTentativa}!` 
         exibirTextoNaTela('p', mensagemTentativa);
         document.getElementById('reiniciar').removeAttribute('disabled');
