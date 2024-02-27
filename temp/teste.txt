@@ -1,0 +1,1 @@
+Teste: esta pasta não deve subir para o repositório remoto.
